@@ -2,7 +2,6 @@ body {
   background-color: lightpink;
 }
 
-
 #grad { 
 	background-image: linear-gradient(to bottom right, pink, red);
 }
@@ -20,8 +19,58 @@ p {
   font-size: 20px;
 }
 
+p::selection {
+  color: red;
+  background: yellowgreen;
+}
+
+p.uni {border: 1px dotted darkblue;}
+
+.cat {
+  border: 2px solid blueviolet;
+  padding: 20px;
+  margin: 10px;
+  background: ghostwhite;
+}
+
+li::marker {color: violet;}
+
 h2::selection {
-	colour: blue;
+	color: blue;
   background: red;
 }
-::marker {colour: orange;}
+
+input:focus {
+  background-color: lightblue;
+}
+
+select:focus {
+  background-color: mediumpurple;
+}
+
+a:link {
+  color: darkred;
+}
+
+a:visited {
+  color: limegreen;
+}
+
+a:hover {
+  color: black;
+}
+
+/* TABLE */
+
+table {
+  border-collapse: collapse;
+  width: 900px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 2px solid darkred;
+}
+
+tr:hover {background-color: orange;}
